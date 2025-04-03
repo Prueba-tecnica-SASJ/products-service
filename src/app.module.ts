@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
+import { NatsModule } from './nats/nats.module';
 
 @Module({
-  imports: [],
+  imports: [NatsModule],
 })
 export class AppModule {}
